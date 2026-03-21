@@ -15,3 +15,11 @@ jobs:
       
       - name: Blueprint Export
         uses: blueprint-community/action-export@v1.0.0
+      # create a release with the blueprint file
+      - name: Create Release
+        uses: softprops/action-gh-release@v1
+        with:
+          files: blueprint.yaml
+          name: blueprint.yaml
+          tag_name: latest
+          generate_release_notes: true
