@@ -22,7 +22,7 @@ jobs:
       - name: Create Release
         uses: softprops/action-gh-release@v1
         with:
-          files: blueprint.blueprint
-          name: blueprint.blueprint
+          files: node-status.blueprint
+          name: node-status.blueprint
           tag_name: latest
           generate_release_notes: true
