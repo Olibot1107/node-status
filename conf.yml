@@ -1,6 +1,6 @@
 info:
   name: "Node Status"
-  identifier: "node-status"
+  identifier: "nodestatus"
   description: "Adds a dashboard page that reports whether each Wings node is responding to /v1/ping."
   version: "1.0.0"
   target: "beta-2025-03"
