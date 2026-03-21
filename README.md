@@ -15,7 +15,7 @@ The panel needs network access to every Wings node so that it can reach `scheme:
 
 ## Installation
 
-1. Place this directory in `extensions/node-status`.
+1. Place this directory in `extensions/nodestatus`.
 2. Run any Blueprint extension install script you normally use.
 3. After the extension is active, look for the **Nodes** entry under **Account** in the Pterodactyl dashboard.
 

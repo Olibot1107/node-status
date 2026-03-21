@@ -48,7 +48,7 @@ export default () => {
 
     const loadNodes = useCallback(() => {
         setLoading(true);
-        http.get<NodeStatus[]>('/extensions/node-status/status')
+        http.get<NodeStatus[]>('/extensions/nodestatus/status')
             .then((response) => {
                 if (!mounted.current) {
                     return;
