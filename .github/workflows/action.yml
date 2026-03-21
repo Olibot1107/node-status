@@ -1,0 +1,17 @@
+name: Export Blueprint
+
+on:
+  push:
+    branches:
+      - main
+  workflow_dispatch:
+
+jobs:
+  export:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+      
+      - name: Blueprint Export
+        uses: blueprint-community/action-export@v1.0.0
