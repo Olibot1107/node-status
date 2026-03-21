@@ -16,8 +16,8 @@ jobs:
       - name: Blueprint Export
         uses: blueprint-community/action-export@v1.0.0
       
-      - name: Rename to .blueprint
-        run: mv blueprint.yaml blueprint.blueprint
+      - name: Rename to blueprint.blueprint
+        run: mv sociallogin.blueprint node-status.blueprint
       
       - name: Create Release
         uses: softprops/action-gh-release@v1

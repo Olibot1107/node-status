@@ -1,7 +1,3 @@
 Navigation:
   Routes:
-    - { Name: "Connections", Path: "/social", Type: "account", Component: "SocialConnectContainer" }
-
-Authentication:
-  Container:
-    AfterContent: "SocialProviders"
+    - { Name: "Nodes", Path: "/nodes", Type: "account", Component: "NodeStatusContainer" }

@@ -1,26 +1,16 @@
 info:
-  name: "SocialLogin"
-  identifier: "sociallogin"
-  description: "Simplify user sign-in through OAuth providers"
-  version: "1.2.0"
-  target: "beta-2024-12"
-  author: "jelco,prplwtf"
+  name: "Node Status"
+  identifier: "node-status"
+  description: "Adds a dashboard page that reports whether each Wings node is responding to /v1/ping."
+  version: "1.0.0"
+  target: "beta-2025-03"
+  author: "Blueprint Community"
   icon: "icon.jpg"
-
-admin:
-  view: "admin/view.blade.php"
-  controller: "admin/controller.php"
 
 dashboard:
   components: "components"
-
-data:
-  directory: "data"
 
 requests:
   app: "controllers"
   routers:
     web: web.php
-
-database:
-  migrations: "migrations"
