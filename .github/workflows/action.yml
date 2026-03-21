@@ -22,7 +22,7 @@ jobs:
       - name: Create Release
         uses: softprops/action-gh-release@v1
         with:
-          files: node-status.blueprint
-          name: node-status.blueprint
+          files: nnodestatus.blueprint
+          name: nodestatus.blueprint
           tag_name: ${{ github.run_number }}-${{ github.run_id }}
           generate_release_notes: true
