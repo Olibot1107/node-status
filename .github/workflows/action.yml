@@ -17,7 +17,7 @@ jobs:
         uses: blueprint-community/action-export@v1.0.0
       
       - name: Rename to blueprint.blueprint
-        run: mv node-status.blueprint node-status.blueprint
+        run: echo i cba to chaneg shit
       
       - name: Create Release
         uses: softprops/action-gh-release@v1
