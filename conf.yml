@@ -1,7 +1,7 @@
 info:
-  name: "Privatcy Blur"
-  identifier: "privacyblur"
-  description: "Blurs emails and IPv4 addresses until they are hovered across the Blueprint UI."
+  name: "Custom Avatars"
+  identifier: "customavatars"
+  description: "Let users upload their own profile pictures instead of relying on Gravatar."
   version: "1.0.0"
   target: "beta-2026-01"
   author: "Blueprint Community"

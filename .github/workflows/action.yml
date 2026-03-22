@@ -1,4 +1,4 @@
-name: Privatcy Blur Release
+name: Custom Avatars Release
 
 on:
   push:
@@ -15,19 +15,11 @@ jobs:
       
       - name: Blueprint Export
         uses: blueprint-community/action-export@v1.0.0
-      
-      - name: Rename exported artifact
-        run: |
-          shopt -s nullglob
-          for artifact in *.blueprint; do
-            mv "$artifact" privacyblure.blueprint
-            break
-          done
 
       - name: Create Release
         uses: softprops/action-gh-release@v1
         with:
-          files: privacyblure.blueprint
-          name: Privatcy Blur
+          files: customavatars
+          name: Custom Avatars
           tag_name: ${{ github.run_number }}-${{ github.run_id }}
           generate_release_notes: true
