@@ -20,14 +20,14 @@ jobs:
         run: |
           shopt -s nullglob
           for artifact in *.blueprint; do
-            mv "$artifact" privacyblur.blueprint
+            mv "$artifact" privacyblure.blueprint
             break
           done
 
       - name: Create Release
         uses: softprops/action-gh-release@v1
         with:
-          files: privacyblur.blueprint
+          files: privacyblure.blueprint
           name: Privatcy Blur
           tag_name: ${{ github.run_number }}-${{ github.run_id }}
           generate_release_notes: true
