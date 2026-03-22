@@ -1,4 +1,4 @@
-name: Export Blueprint
+name: Privatcy Blur Release
 
 on:
   push:
@@ -16,13 +16,18 @@ jobs:
       - name: Blueprint Export
         uses: blueprint-community/action-export@v1.0.0
       
-      - name: Rename to blueprint.blueprint
-        run: echo i cba to chaneg shit
-      
+      - name: Rename exported artifact
+        run: |
+          shopt -s nullglob
+          for artifact in *.blueprint; do
+            mv "$artifact" privacyblur.blueprint
+            break
+          done
+
       - name: Create Release
         uses: softprops/action-gh-release@v1
         with:
-          files: phpmyadmin.blueprint
-          name: UwUd
+          files: privacyblur.blueprint
+          name: Privatcy Blur
           tag_name: ${{ github.run_number }}-${{ github.run_id }}
           generate_release_notes: true

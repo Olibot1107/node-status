@@ -1,7 +1,7 @@
 info:
-  name: "phpMyAdmin Quick Launch"
-  identifier: "phpmyadmin"
-  description: "Injects phpMyAdmin quick-launch buttons into each server's database page."
+  name: "Privatcy Blur"
+  identifier: "privacyblur"
+  description: "Blurs emails and IPv4 addresses until they are hovered across the Blueprint UI."
   version: "1.0.0"
   target: "beta-2026-01"
   author: "Blueprint Community"
@@ -12,8 +12,3 @@ admin:
 
 dashboard:
   components: "components"
-
-requests:
-  app: "controllers"
-  routers:
-    web: web.php

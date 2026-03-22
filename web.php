@@ -1,6 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
-use Pterodactyl\BlueprintFramework\Extensions\nodestatus\PhpMyAdminController;
+use Pterodactyl\BlueprintFramework\Extensions\privacyblur\PrivacyBlurController;
 
-Route::get('/config', [PhpMyAdminController::class, 'config']);
+Route::get('/settings', [PrivacyBlurController::class, 'settings']);
+Route::post('/settings', [PrivacyBlurController::class, 'update']);
