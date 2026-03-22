@@ -19,7 +19,7 @@ jobs:
       - name: Create Release
         uses: softprops/action-gh-release@v1
         with:
-          files: customavatars
+          files: customavatars.blueprint
           name: Custom Avatars
           tag_name: ${{ github.run_number }}-${{ github.run_id }}
           generate_release_notes: true
