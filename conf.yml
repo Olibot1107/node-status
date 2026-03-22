@@ -1,7 +1,7 @@
 info:
-  name: "Node Status"
-  identifier: "nodestatus"
-  description: "Adds a dashboard page that reports whether each Wings node is responding to /v1/ping."
+  name: "phpMyAdmin Quick Launch"
+  identifier: "phpmyadmin"
+  description: "Injects phpMyAdmin quick-launch buttons into each server's database page."
   version: "1.0.0"
   target: "beta-2026-01"
   author: "Blueprint Community"

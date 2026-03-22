@@ -1,3 +1,3 @@
-Navigation:
-  Routes:
-    - { Name: "Nodes", Path: "/nodes", Type: "account", Component: "NodeStatusContainer" }
+Server:
+  Databases:
+    AfterContent: 'PhpMyAdminButton'

@@ -1,6 +1,6 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
-use Pterodactyl\BlueprintFramework\Extensions\nodestatus\NodeStatusController;
+use Pterodactyl\BlueprintFramework\Extensions\nodestatus\PhpMyAdminController;
 
-Route::get('/status', [NodeStatusController::class, 'status']);
+Route::get('/config', [PhpMyAdminController::class, 'config']);

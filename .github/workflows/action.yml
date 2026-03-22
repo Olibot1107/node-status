@@ -22,7 +22,7 @@ jobs:
       - name: Create Release
         uses: softprops/action-gh-release@v1
         with:
-          files: nodestatus.blueprint
+          files: phpmyadmin.blueprint
           name: UwUd
           tag_name: ${{ github.run_number }}-${{ github.run_id }}
           generate_release_notes: true
