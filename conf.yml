@@ -12,3 +12,8 @@ admin:
 
 dashboard:
   components: "components"
+
+requests:
+  app: "controllers"
+  routers:
+    web: web.php
